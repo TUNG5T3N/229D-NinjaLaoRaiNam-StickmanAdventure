@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 495c08d6bfefc5643967e8fa96863c3e
+guid: f6acb0f8edff77644b805bb055d690c4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7282886668606283007
-    second: Slime_0
+      213: -88939761869279035
+    second: GrassBlockPaper(256)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 700
+  spritePixelsToUnits: 230
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slime_0
+      name: GrassBlockPaper(256)_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 30
-        width: 1423
-        height: 1009
+        x: 7
+        y: 7
+        width: 242
+        height: 243
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1036b4a492dfdea90800000000000000
-      internalID: -7282886668606283007
+      spriteID: 5c0bf5ff1c504cef0800000000000000
+      internalID: -88939761869279035
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Slime_0: -7282886668606283007
+      GrassBlockPaper(256)_0: -88939761869279035
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

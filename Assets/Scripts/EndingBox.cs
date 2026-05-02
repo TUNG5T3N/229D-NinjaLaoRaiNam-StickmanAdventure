@@ -13,12 +13,17 @@ public class EndingBox : MonoBehaviour
 
     async Task BrightScene()
     {
+        //Debug.Log(1);
         GameObject newBCanvas = Instantiate(BrightCanvas);
         GameObject BG = newBCanvas.transform.Find("BG").gameObject;
         Image sprite = BG.GetComponent<Image>();
         EndSFX.Play();
         await sprite.DOBlendableColor(Color.white, 5f).AsyncWaitForCompletion();
+        //Debug.Log(2);
         await sprite.DOBlendableColor(Color.black, 0.5f).AsyncWaitForCompletion();
+        //Debug.Log(3);
+        await Task.Delay(1000);
+        //Debug.Log(4);
         Destroy(newBCanvas);
         GameObject newCanvas = Instantiate(CreditCanvas);
         CreditScript creditScript = newCanvas.GetComponent<CreditScript>();

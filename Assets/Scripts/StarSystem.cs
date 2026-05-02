@@ -24,7 +24,8 @@ public class StarSystem : MonoBehaviour
     public void EnemyDiedAssign()
     {
         Dead++;
-        progress = Dead / EnemyCount;
+        progress = (float)Dead / (float)EnemyCount;
+
         //Debug.Log($"{progress}, {Dead}, {EnemyCount}");
         // Star1
         if (progress >= 0.33f)

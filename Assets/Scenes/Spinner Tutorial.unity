@@ -368,7 +368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -248, y: 251}
+  m_AnchoredPosition: {x: -218, y: 295}
   m_SizeDelta: {x: 895.5247, y: 184.3207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &72954012
@@ -391,9 +391,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Press F to throw Spinner
+  m_text: 'Use mouse to aim
 
-    Spinner will return back to you'
+    Press F to throw Spinner
+
+    Spinner will return
+    back to you'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e7f3c5f27bc4b0f458111c39803ccd66, type: 2}
   m_sharedMaterial: {fileID: -1572726498376796173, guid: e7f3c5f27bc4b0f458111c39803ccd66, type: 2}
@@ -420,8 +423,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 63
+  m_fontSizeBase: 63
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

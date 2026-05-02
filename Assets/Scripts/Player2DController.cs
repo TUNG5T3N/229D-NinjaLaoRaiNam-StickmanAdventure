@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player2DController : MonoBehaviour
+public class Player2DController : Alive
 {
     public float speed = 5.0f;
     public float jumpForce = 450f;
@@ -52,5 +52,10 @@ public class Player2DController : MonoBehaviour
         {
             _isGrounded = false;
         }
+    }
+
+    public override void OnDied()
+    {
+        // On Player Died
     }
 }

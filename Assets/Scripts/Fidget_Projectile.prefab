@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6777617064642164813}
+  - component: {fileID: 5725225902918563847}
   - component: {fileID: 7659865372729473359}
   - component: {fileID: 2381021076327370545}
   - component: {fileID: 4723338575024960151}
@@ -34,6 +35,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5725225902918563847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7873378756118503200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd08b6839c7d004d85e6c535a956c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileScript
+  Damage: 25
 --- !u!212 &7659865372729473359
 SpriteRenderer:
   serializedVersion: 2

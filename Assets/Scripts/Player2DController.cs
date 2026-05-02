@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class Player2DController : Alive
 {
+    [SerializeField] GameObject CreditCanvas;
     public float speed = 5.0f;
     public float jumpForce = 450f;
 
@@ -57,5 +58,9 @@ public class Player2DController : Alive
     public override void OnDied()
     {
         // On Player Died
+        GameObject newCanvas = Instantiate(CreditCanvas);
+        CreditScript creditScript = newCanvas.GetComponent<CreditScript>();
+        creditScript.GameResult(false);
+        Destroy(this);
     }
 }

@@ -47,6 +47,7 @@ public class Monster : Alive
     }
     public override void OnDied()
     {
+        GameObject.FindAnyObjectByType<StarSystem>().EnemyDiedAssign();
         Destroy(this.gameObject);
     }
 }

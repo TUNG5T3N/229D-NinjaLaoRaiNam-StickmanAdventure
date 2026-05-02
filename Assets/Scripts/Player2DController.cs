@@ -76,9 +76,11 @@ public class Player2DController : Alive
     public override void OnDied()
     {
         // On Player Died
+        _rb.linearVelocity = Vector2.zero;
         GameObject newCanvas = Instantiate(CreditCanvas);
         CreditScript creditScript = newCanvas.GetComponent<CreditScript>();
         creditScript.GameResult(false);
         Destroy(this);
+        
     }
 }

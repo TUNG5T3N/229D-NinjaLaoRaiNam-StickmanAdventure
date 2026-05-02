@@ -1101,6 +1101,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4400788815099905737, guid: 64bf9510bf380b14391ba669411b4985, type: 3}
   m_PrefabInstance: {fileID: 969619828}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &502729055 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 670635171517654312, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
+  m_PrefabInstance: {fileID: 1171094627}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &516372931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1695,11 +1700,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1830719211156590848, guid: 9ef4a76d2becbb147a7f6b8348baf733, type: 3}
   m_PrefabInstance: {fileID: 523425405}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &624154397 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 670635171517654312, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
-  m_PrefabInstance: {fileID: 1171094627}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &641258208 stripped
 Transform:
@@ -5429,7 +5429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee27d5a8505d2e4caa427e06d4c96e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow2D
-  target: {fileID: 624154397}
+  target: {fileID: 502729055}
 --- !u!114 &2025371546
 MonoBehaviour:
   m_ObjectHideFlags: 0

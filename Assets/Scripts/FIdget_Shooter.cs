@@ -10,7 +10,7 @@ public class FIdget_Shooter : MonoBehaviour
     [SerializeField] float MagnusStrength = 0.001f;
     [SerializeField] float BeforeMagnusDuration = 1f;
     [SerializeField] float MagnusDuration = 1f;
-
+    [SerializeField] AudioSource ThrowSFX;
     Boolean isShootable = true;
     GameObject CurrentProjectile;
 
@@ -28,6 +28,7 @@ public class FIdget_Shooter : MonoBehaviour
     {
         if (Keyboard.current.fKey.isPressed && isShootable)
         {
+            ThrowSFX.Play();
             isShootable = false;
             phase = 0;
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

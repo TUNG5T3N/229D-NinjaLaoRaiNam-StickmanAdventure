@@ -119,6 +119,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &4363103 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9180874276684156512, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
+  m_PrefabInstance: {fileID: 24247933075326358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &128252790 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8321152545909608493, guid: 35bee274076107d45aab79a42e9d638e, type: 3}
+  m_PrefabInstance: {fileID: 7855959803948229211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &317063723
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,10 +678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 4084262827882046285, guid: eaafef28e3d2b114e8c96179c7ac2f1e, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
+    - target: {fileID: 7357438741169532591, guid: eaafef28e3d2b114e8c96179c7ac2f1e, type: 3}
+      propertyPath: HitSound
+      value: 
+      objectReference: {fileID: 1335596681}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -846,6 +856,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikeScript
   Damage: 10
+--- !u!82 &1335596681 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3997238461189819785, guid: eaafef28e3d2b114e8c96179c7ac2f1e, type: 3}
+  m_PrefabInstance: {fileID: 647692800}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2092423726 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2174524421226004272, guid: 35bee274076107d45aab79a42e9d638e, type: 3}
+  m_PrefabInstance: {fileID: 7855959803948229211}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &24247933075326358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -858,18 +878,6 @@ PrefabInstance:
       propertyPath: CreditCanvas
       value: 
       objectReference: {fileID: 3215906936612695285, guid: 2cc93bce4d279f042a3036a32d914017, type: 3}
-    - target: {fileID: 670635171517654312, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4926
-      objectReference: {fileID: 0}
-    - target: {fileID: 670635171517654312, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4926
-      objectReference: {fileID: 0}
-    - target: {fileID: 670635171517654312, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4926
-      objectReference: {fileID: 0}
     - target: {fileID: 670635171517654312, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.04
@@ -914,13 +922,13 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6452785401944135464, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
+      propertyPath: ThrowSFX
+      value: 
+      objectReference: {fileID: 4363103}
     - target: {fileID: 6569002362483189154, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7885483512593776089, guid: cae40720d47b9f04eba171a431f9f746, type: 3}
-      propertyPath: m_Constraints
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1040,6 +1048,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 478026812243728521, guid: 35bee274076107d45aab79a42e9d638e, type: 3}
+      propertyPath: EndSFX
+      value: 
+      objectReference: {fileID: 128252790}
+    - target: {fileID: 478026812243728521, guid: 35bee274076107d45aab79a42e9d638e, type: 3}
+      propertyPath: EndMusic
+      value: 
+      objectReference: {fileID: 2092423726}
     - target: {fileID: 4101158355780179639, guid: 35bee274076107d45aab79a42e9d638e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.77

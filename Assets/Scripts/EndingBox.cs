@@ -7,7 +7,9 @@ public class EndingBox : MonoBehaviour
 {
     [SerializeField] GameObject CreditCanvas;
     [SerializeField] GameObject BrightCanvas;
-
+    [SerializeField] AudioSource EndSFX;
+    [SerializeField] AudioSource BGM;
+    [SerializeField] AudioSource EndMusic;
 
     async Task BrightScene()
     {
@@ -15,6 +17,7 @@ public class EndingBox : MonoBehaviour
         GameObject newBCanvas = Instantiate(BrightCanvas);
         GameObject BG = newBCanvas.transform.Find("BG").gameObject;
         Image sprite = BG.GetComponent<Image>();
+        EndSFX.Play();
         await sprite.DOBlendableColor(Color.white, 5f).AsyncWaitForCompletion();
         //Debug.Log(2);
         await sprite.DOBlendableColor(Color.black, 0.5f).AsyncWaitForCompletion();
@@ -25,6 +28,7 @@ public class EndingBox : MonoBehaviour
         GameObject newCanvas = Instantiate(CreditCanvas);
         CreditScript creditScript = newCanvas.GetComponent<CreditScript>();
         creditScript.GameResult(true);
+        EndMusic.Play();
     }
 
     async void OnTriggerEnter2D(Collider2D collision)
@@ -35,6 +39,10 @@ public class EndingBox : MonoBehaviour
         {
             db = true;
             Destroy(player);
+            if (BGM != null)
+            {
+                BGM.Stop();
+            }
             BrightScene();
         }
     }

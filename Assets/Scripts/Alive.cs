@@ -23,7 +23,7 @@ abstract public class Alive : MonoBehaviour
         yield return null;
     }
 
-    public void TakeDamage(float Damage)
+    public virtual void TakeDamage(float Damage)
     {
         if (IFrame) { return; }
         StartCoroutine(TakeDamageEffect());

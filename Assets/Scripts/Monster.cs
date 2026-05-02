@@ -6,6 +6,7 @@ public class Monster : Alive
     [SerializeField] float WalkTime = 5;
     [SerializeField] float Speed = 5;
     [SerializeField] float Damage = 50;
+    [SerializeField] AudioSource HitSound;
 
     Rigidbody2D rigidbody2D;
     float RoamTime = 10;
@@ -44,6 +45,12 @@ public class Monster : Alive
         {
             PlayerScript.TakeDamage(Damage);
         }
+    }
+
+    public override void TakeDamage(float Damage)
+    {
+        base.TakeDamage(Damage);
+        HitSound.Play();
     }
     public override void OnDied()
     {

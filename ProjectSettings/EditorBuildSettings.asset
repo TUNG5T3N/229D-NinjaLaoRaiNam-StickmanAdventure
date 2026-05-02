@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/The Lab.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 136a43acf0ed3104db0b592e0e591d8d
+  - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 9d5ebf76b1cea3a4d854e7d828540560
+  - enabled: 1
+    path: Assets/Scenes/Spinner Tutorial.unity
+    guid: 973115ec09b0bbf4896b37b9129fd200
+  - enabled: 1
+    path: Assets/Scenes/Stage.unity
+    guid: 8614d51633de8704f86e1f0a82edf455
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

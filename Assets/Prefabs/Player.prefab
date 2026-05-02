@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 670635171517654312}
   - component: {fileID: 3587986258825350096}
+  - component: {fileID: 6452785401944135464}
   - component: {fileID: 7885483512593776089}
   - component: {fileID: 3118878027508252600}
   - component: {fileID: 322284690969099867}
@@ -29,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 6569002362483189154}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.3650928, y: -1.7018499, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -7.4038935, y: -2.4964871, z: 0}
+  m_LocalScale: {x: 0.4926, y: 0.4926, z: 0.4926}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,7 +87,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4952197687118601023, guid: 38ade244ab9fc2a49a34fc9e589434e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.06, y: 2.82}
@@ -94,6 +95,24 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &6452785401944135464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569002362483189154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f015b53af3074f447ae9cc942d2d75cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FIdget_Shooter
+  FidgetPrefab: {fileID: 7873378756118503200, guid: 24716b7fdc3f24742a1ab8b5cf40fdb9, type: 3}
+  Speed: 5
+  Torque: 800
+  MagnusStrength: 0.005
+  BeforeMagnusDuration: 1
+  MagnusDuration: 2
 --- !u!50 &7885483512593776089
 Rigidbody2D:
   serializedVersion: 5

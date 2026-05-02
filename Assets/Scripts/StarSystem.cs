@@ -9,6 +9,7 @@ public class StarSystem : MonoBehaviour
     Image Star3;
     int EnemyCount = 0;
     int Dead = 0;
+    public float progress = 0;
     private void Start()
     {
         Star1 = transform.Find("Star1").GetComponent<Image>();
@@ -23,7 +24,7 @@ public class StarSystem : MonoBehaviour
     public void EnemyDiedAssign()
     {
         Dead++;
-        float progress = Dead / EnemyCount;
+        progress = Dead / EnemyCount;
         //Debug.Log($"{progress}, {Dead}, {EnemyCount}");
         // Star1
         if (progress >= 0.33f)

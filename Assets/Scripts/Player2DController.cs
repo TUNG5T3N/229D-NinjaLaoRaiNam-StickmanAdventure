@@ -8,6 +8,7 @@ public class Player2DController : Alive
     public float jumpForce = 450f;
 
     private bool _isGrounded = false;
+    bool _isWatered = false;
     private float moveValue;
     private Rigidbody2D _rb;
 
@@ -24,8 +25,8 @@ public class Player2DController : Alive
         _rb.linearVelocity = new Vector2(moveValue * speed, _rb.linearVelocity.y);
         if (moveValue < 0){gameObject.GetComponent<SpriteRenderer>().flipX = true;}
         else if (moveValue > 0) { gameObject.GetComponent<SpriteRenderer>().flipX = false; }
-
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && _isGrounded)
+        //Debug.Log($"{_isGrounded} {_isWatered})");
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && (_isGrounded || _isWatered))
         {
             _rb.AddForce(new Vector2(_rb.linearVelocity.x, jumpForce));
         }
@@ -52,6 +53,23 @@ public class Player2DController : Alive
         if (collision.gameObject.CompareTag("Ground"))
         {
             _isGrounded = false;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Debug.Log(collision);
+        if (collision.gameObject.CompareTag("Water"))
+        {
+            _isWatered = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Water"))
+        {
+            _isWatered = false;
         }
     }
 

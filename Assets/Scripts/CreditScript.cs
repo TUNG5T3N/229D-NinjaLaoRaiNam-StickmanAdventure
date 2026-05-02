@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,6 +17,7 @@ public class CreditScript : MonoBehaviour
 
     public void OnClickedBackToMainMenu()
     {
+        Debug.Log(SceneName);
         SceneManager.LoadScene(SceneName);
     }
 }

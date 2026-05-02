@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EndingBox : MonoBehaviour
 {
@@ -10,19 +11,16 @@ public class EndingBox : MonoBehaviour
 
     async Task BrightScene()
     {
-        Camera camera = FindAnyObjectByType<Camera>();
+        //Debug.Log(1);
         GameObject newBCanvas = Instantiate(BrightCanvas);
-        Canvas canvas = newBCanvas.GetComponent<Canvas>();
-        canvas.renderMode = RenderMode.ScreenSpaceCamera;
-        canvas.worldCamera = camera;
-        canvas.planeDistance = 30f;
-
-
         GameObject BG = newBCanvas.transform.Find("BG").gameObject;
-        SpriteRenderer sprite = BG.GetComponent<SpriteRenderer>();
+        Image sprite = BG.GetComponent<Image>();
         await sprite.DOBlendableColor(Color.white, 5f).AsyncWaitForCompletion();
+        //Debug.Log(2);
         await sprite.DOBlendableColor(Color.black, 0.5f).AsyncWaitForCompletion();
+        //Debug.Log(3);
         await Task.Delay(1000);
+        //Debug.Log(4);
         Destroy(newBCanvas);
         GameObject newCanvas = Instantiate(CreditCanvas);
         CreditScript creditScript = newCanvas.GetComponent<CreditScript>();
